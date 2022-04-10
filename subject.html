@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>onStudy Form 5: Physics</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/subject.styles.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbarTop fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost/onStudy"><img id="i_logo" src="images/red.png" alt=""></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active nav-linkTop" aria-current="page" href="#">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-linkTop" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-linkTop" href="#">Past year paper</a>
+            </li>
+          </ul>
+          <div class="searchbar">
+            <form class="d-flex">
+              <input class="form-control me-1" id="inputSearch" type="search" placeholder="Search . . . " aria-label="Search">
+              <button class="btn btn-outline-success" id="b_search" type="submit"><i class="fas fa-search"></i></button>
+              <button class="btn btn-outline ms-2" id="b_user" name="button"><i class="fas fa-user"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand fixed-bottom">
+      <div class="container-fluid">
+        <ul class="navbar-nav navbarBottom">
+          <li class="nav-item">
+            <a class="nav-link active navPhone" aria-current="page" href="#"><i class="fas fa-star faBottom"></i><br><span class="fontNav">Featured</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-search faBottom"></i><br><span class="fontNav">Search</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-heart faBottom"></i><br><span class="fontNav">Wishlist</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-book faBottom"></i><br><span class="fontNav">Past year paper</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-user faBottom"></i><br><span class="fontNav">Account</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Back button -->
+    <button class="btn btn-outline-secondary" id="b_back" type="button" name="button"><i class="fas fa-chevron-left"></i>  Back</button>
+
+    <!-- Main -->
+    <div class="main">
+      <h1 class="section_title"></h1>
+      <div id="subtopic"></div>
+    </div>
+
+    <footer></footer>
+
+    <!-- JavaScript -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyCAz7QCTEV9WGhWjx9SFfcHuzeOUDFFEls",
+        authDomain: "onstudy-df35a.firebaseapp.com",
+        projectId: "onstudy-df35a",
+        storageBucket: "onstudy-df35a.appspot.com",
+        messagingSenderId: "511243600595",
+        appId: "1:511243600595:web:5dea017c9847181e600a26",
+        measurementId: "G-S9VYCKGSW1"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/subject.js" charset="utf-8"></script>
+  </body>
+</html>
