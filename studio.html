@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>onStudy Studio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/studio.styles.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbarTop fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img id="i_logo" src="images/red.png" alt=""></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active nav-linkTop" aria-current="page" href="index.html">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-linkTop" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-linkTop" href="#">Past year paper</a>
+            </li>
+          </ul>
+          <div class="searchbar">
+            <form class="d-flex">
+              <input class="form-control me-1" id="inputSearch" type="search" placeholder="Search . . . " aria-label="Search">
+              <button class="btn btn-outline-success" id="b_search" type="submit"><i class="fas fa-search"></i></button>
+              <button class="btn btn-outline ms-2" id="b_user" name="button"><i class="fas fa-user"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand fixed-bottom">
+      <div class="container-fluid">
+        <ul class="navbar-nav navbarBottom">
+          <li class="nav-item">
+            <a class="nav-link active navPhone" aria-current="page" href="#"><i class="fas fa-star faBottom"></i><br><span class="fontNav">Featured</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-search faBottom"></i><br><span class="fontNav">Search</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="index.html"><i class="fas fa-heart faBottom"></i><br><span class="fontNav">Wishlist</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-book faBottom"></i><br><span class="fontNav">Past year paper</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPhone" href="#"><i class="fas fa-user faBottom"></i><br><span class="fontNav">Account</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Back button -->
+    <button class="btn btn-outline-secondary" id="b_back" type="button" name="button"><i class="fas fa-chevron-left"></i>  Back</button>
+
+    <!-- Main -->
+    <div class="main">
+			<h1 class="card-title studio-card-title">onStudy Studio</h1>
+			<h3>General <span class="star">*</span></h3>
+			<div id="general">
+				<div class="title">
+					<p class="subtitle">Title <span class="star">*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </p>
+					<p class="blank">
+						<textarea name="title" id="t_title" rows="2" maxlength="100" required></textarea>
+						<span class="count text-muted"><span id="count_title">0</span> / 100</span>
+					</p>
+				</div>
+				<div class="des">
+					<p class="subtitle">Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </p>
+					<p class="blank">
+						<textarea name="des" id="t_des" rows="5" maxlength="5000"></textarea>
+						<span class="count text-muted"><span id="count_des">0</span> / 5000</span>
+					</p>
+				</div>
+				<div class="level">
+					<p class="subtitle">Level <span class="star">*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </p>
+					<select class="blank" id="select_level">
+            <option value="none"> - - None - - </option>
+						<option value="Form 1">Form 1</option>
+						<option value="Form 2">Form 2</option>
+						<option value="Form 3">Form 3</option>
+						<option value="Form 4">Form 4</option>
+						<option value="Form 5">Form 5</option>
+					</select>/
+          <select class="blank disabled" id="select_subject">
+						<option value="none"> - - None - - </option>
+					</select>/
+          <select class="blank disabled" id="select_chapters">
+						<option value="none"> - - None - - </option>
+					</select>
+				</div>
+				<div class="lang">
+					<p class="subtitle sub_lang">Language(s) <span class="star">*</span>&nbsp;&nbsp;: </p>
+					<section class="wrapper"><input type="checkbox" name="malay" value="Malay" class="checkbox_lang" id="c_mal"><label for="c_mal" class="label_blank">Malay</label></section>
+					<section class="wrapper"><input type="checkbox" name="english" value="English" class="checkbox_lang" id="c_eng"><label for="c_eng" class="label_blank">English</label></section>
+					<section class="wrapper"><input type="checkbox" name="mandarin" value="Mandarin" class="checkbox_lang" id="c_man"><label for="c_man" class="label_blank">Mandarin</label></section>
+					<section class="wrapper"><input type="checkbox" name="tamil" value="Tamil" class="checkbox_lang" id="c_tam"><label for="c_tam" class="label_blank">Tamil</label></section>
+					<section class="wrapper"><input type="checkbox" name="others" class="checkbox_lang" id="c_oth"><label for="c_oth" class="label_blank" id="others">Others (Please specify): </label>
+					<input type="text" name="others_text" class="disabled" id="others_text" placeholder="Use comma (,) to separate languages."></section>
+				</div>
+			</div>
+			<h3>Upload <span class="star">*</span></h3>
+      <div id="upload">
+        <div class="col-sm-12 box_upload box_upload_thumbnail mb-3">
+          <div class="upload_checkbox">
+            <input type="checkbox" class="mt-2" style="visibility: hidden;">Thumbnail</div>
+          <div class="rect_dash rect_dash_thumbnail">
+            <div class="upload_media upload_thumbnail">
+              <input type="file" name="t_video" value="yes" id="t_thumbnail" accept="image/*" hidden>
+              <div class="b_upload_media b_upload_media_thumbnail mb-2" id="b_upload_thumbnail">
+                <label class="l_media l_thumbnail" for="t_thumbnail"><i class="fa-duotone fa-upload"></i>  Upload</label>
+              </div>
+              <p class="file-chosen-media" id="file-chosen-thumbnail">No file chosen</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 row_upload mb-3">
+  				<div class="col-sm-12 box_upload mb-1">
+            <div class="upload_checkbox">
+              <input type="checkbox" name="video_upload" value="yes" class="c_upload" id="c_video_upload">
+              <label for="c_video_upload">Video</label>
+            </div>
+            <div class="rect_dash">
+              <div class="upload_media">
+                <input type="file" name="t_video" value="yes" id="t_video" accept="video/*" hidden>
+                <div class="b_upload_media mb-3" id="b_upload_video">
+                  <label class="l_media" for="t_video"><i class="fa-duotone fa-upload"></i>  Upload</label>
+                </div>
+                <p class="file-chosen-media" id="file-chosen-video">No file chosen</p>
+              </div>
+            </div>
+  				</div>
+          <div class="col-sm-12 box_upload mb-1">
+            <div class="upload_checkbox">
+              <input type="checkbox" name="notes_upload" value="yes" class="c_upload" id="c_notes_upload">
+              <label for="c_notes_upload">Notes</label>
+            </div>
+            <div class="rect_dash">
+              <div class="upload_media">
+                <input type="file" name="t_notes" value="yes" id="t_notes" accept="application/pdf" hidden>
+                <div class="b_upload_media mb-3" id="b_upload_notes">
+                  <label class="l_media" for="t_notes"><i class="fa-duotone fa-upload"></i>  Upload</label>
+                </div>
+                <p class="file-chosen-media" id="file-chosen-notes">No file chosen (PDF only)</p>
+              </div>
+            </div>
+  				</div>
+  			</div>
+      </div>
+      <button type="submit" name="upload" id="b_upload">➤</button>
+
+      <!-- Bootstrap alert -->
+      <div id="liveAlertPlaceholder"></div>
+
+      <footer></footer>
+
+		</div>
+    <!-- JavaScript -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyCAz7QCTEV9WGhWjx9SFfcHuzeOUDFFEls",
+        authDomain: "onstudy-df35a.firebaseapp.com",
+        projectId: "onstudy-df35a",
+        storageBucket: "onstudy-df35a.appspot.com",
+        messagingSenderId: "511243600595",
+        appId: "1:511243600595:web:5dea017c9847181e600a26",
+        measurementId: "G-S9VYCKGSW1"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/studio.js" charset="utf-8"></script>
+  </body>
+</html>
